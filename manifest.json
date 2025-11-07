@@ -5,7 +5,7 @@
   "permissions": ["scripting"],
   "content_scripts": [
     {
-      "matches": ["https://maplestory-event.beanfun.com/StarryCircus/Index"],
+      "matches": ["https://maplestory-event.beanfun.com/StarryCircus*"],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
