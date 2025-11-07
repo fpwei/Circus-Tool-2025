@@ -1,0 +1,51 @@
+#section-viewer {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 320px;
+  height: fit-content;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#section-viewer .sv-content {
+  flex: 1;
+  overflow: auto;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+}
+
+.board img {
+  height: 80px;
+  width: 80px;
+}
+
+.sv-hide {
+  display: none !important;
+}
+button.sv-complete-btn {
+  all: unset; /* 移除瀏覽器預設樣式 */
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  background: #28a745;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button.sv-complete-btn:hover {
+  background: #218838;
+}
